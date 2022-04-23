@@ -2,8 +2,10 @@
 
 namespace App\Http\Requests;
 
-use App\Rules\RightCpf;
 use Illuminate\Foundation\Http\FormRequest;
+
+use App\Rules\GoogleRecaptcha;
+use App\Rules\RightCpf;
 
 class CustomerRequest extends FormRequest
 {
@@ -25,9 +27,10 @@ class CustomerRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'  =>  ['required','string'],
-            'email' =>  ['present','email'],
-            'cpf'   =>  ["required","unique:customers,cpf,{$this->id}","digits:11","numeric",new RightCpf],
+            'name'                  =>  ['required','string'],
+            'email'                 =>  ['present','email'],
+            'cpf'                   =>  ["required","unique:customers,cpf,{$this->id}",new RightCpf],
+            'g-recaptcha-response'  =>   ['required',new GoogleRecaptcha],
         ];
     }
 }

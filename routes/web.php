@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\CustomerController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,4 +19,4 @@ Route::get('/', function () {
     return redirect('/customers');
 });
 
-Route::resource('customers','CustomerController');
+Route::resource('customers',CustomerController::class);

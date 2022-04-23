@@ -35,7 +35,7 @@ class RightCpf implements Rule
      */
     public function message()
     {
-        return 'This cpf is not a valid cpf';
+        return 'This cpf is not valid';
     }
 
     public function validateCpf($cpf){

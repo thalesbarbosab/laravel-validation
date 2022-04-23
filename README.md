@@ -28,3 +28,6 @@ https://www.4devs.com.br/gerador_de_cpf
 
 Jquery mask validator
 https://igorescobar.github.io/jQuery-Mask-Plugin/
+
+Google Recaptcha
+https://www.google.com/recaptcha/about/

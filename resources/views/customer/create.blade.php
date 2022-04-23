@@ -38,6 +38,15 @@
                 </span>
             @endif
         </div>
+        <div class="mb-3">
+            <div class="g-recaptcha @error('g-recaptcha-response') is-invalid @enderror" data-sitekey="{{ env('GOOGLE_RECAPTCHA_KEY') }}"></div>
+            @if ($errors->has('g-recaptcha-response'))
+                <span class="invalid-feedback">
+                    <strong>{{ $errors->first('g-recaptcha-response') }}</strong>
+                </span>
+            @endif
+        </div>
+        <br>
         <div class="d-grid gap-2">
             <button class="btn btn-outline btn-primary" type="submit">Submit</button>
         </div>
