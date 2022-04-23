@@ -3,8 +3,8 @@ Como de forma simples usar o validações precisas para obrigar seu usuario a im
 
 Requisitos:
 **Composer versão 2.0
-**Laravel 8
-**PHP 7.3
+**Laravel 9
+**PHP 8.1
 
 Para rodar o projeto execute os passos abaixo:
 1- clone o repositorio em um ambiente local
@@ -18,7 +18,7 @@ Para rodar o projeto execute os passos abaixo:
 Links Úteis:
 
 Laravel Form Request
-https://laravel.com/docs/8.x/validation#preparing-input-for-validation
+https://laravel.com/docs/9.x/validation#preparing-input-for-validation
 
 Bootstrap 5
 https://getbootstrap.com/docs/5.0/getting-started/introduction/
